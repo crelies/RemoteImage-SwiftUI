@@ -13,6 +13,10 @@
 		B96695822300A03F00D249D3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B96695812300A03F00D249D3 /* Assets.xcassets */; };
 		B96695852300A03F00D249D3 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B96695842300A03F00D249D3 /* Preview Assets.xcassets */; };
 		B96695882300A03F00D249D3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B96695862300A03F00D249D3 /* LaunchScreen.storyboard */; };
+		B96695942300A0A600D249D3 /* RemoteImageServiceError.swift in Sources */ = {isa = PBXBuildFile; fileRef = B96695922300A0A600D249D3 /* RemoteImageServiceError.swift */; };
+		B96695952300A0A600D249D3 /* RemoteImageState.swift in Sources */ = {isa = PBXBuildFile; fileRef = B96695932300A0A600D249D3 /* RemoteImageState.swift */; };
+		B96695972300A0AC00D249D3 /* RemoteImageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B96695962300A0AC00D249D3 /* RemoteImageService.swift */; };
+		B96695992300A0B400D249D3 /* RemoteImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = B96695982300A0B400D249D3 /* RemoteImage.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +28,10 @@
 		B96695842300A03F00D249D3 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		B96695872300A03F00D249D3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B96695892300A03F00D249D3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B96695922300A0A600D249D3 /* RemoteImageServiceError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RemoteImageServiceError.swift; sourceTree = "<group>"; };
+		B96695932300A0A600D249D3 /* RemoteImageState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RemoteImageState.swift; sourceTree = "<group>"; };
+		B96695962300A0AC00D249D3 /* RemoteImageService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RemoteImageService.swift; sourceTree = "<group>"; };
+		B96695982300A0B400D249D3 /* RemoteImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RemoteImage.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +64,9 @@
 		B966957A2300A03C00D249D3 /* RemoteImage */ = {
 			isa = PBXGroup;
 			children = (
+				B96695902300A05500D249D3 /* Models */,
+				B966958F2300A04600D249D3 /* Services */,
+				B96695912300A05B00D249D3 /* Views */,
 				B966957B2300A03C00D249D3 /* AppDelegate.swift */,
 				B966957D2300A03C00D249D3 /* SceneDelegate.swift */,
 				B966957F2300A03C00D249D3 /* ContentView.swift */,
@@ -73,6 +84,31 @@
 				B96695842300A03F00D249D3 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		B966958F2300A04600D249D3 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				B96695962300A0AC00D249D3 /* RemoteImageService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		B96695902300A05500D249D3 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				B96695922300A0A600D249D3 /* RemoteImageServiceError.swift */,
+				B96695932300A0A600D249D3 /* RemoteImageState.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		B96695912300A05B00D249D3 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				B96695982300A0B400D249D3 /* RemoteImage.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -148,6 +184,10 @@
 			files = (
 				B966957C2300A03C00D249D3 /* AppDelegate.swift in Sources */,
 				B966957E2300A03C00D249D3 /* SceneDelegate.swift in Sources */,
+				B96695992300A0B400D249D3 /* RemoteImage.swift in Sources */,
+				B96695942300A0A600D249D3 /* RemoteImageServiceError.swift in Sources */,
+				B96695972300A0AC00D249D3 /* RemoteImageService.swift in Sources */,
+				B96695952300A0A600D249D3 /* RemoteImageState.swift in Sources */,
 				B96695802300A03C00D249D3 /* ContentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

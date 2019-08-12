@@ -36,7 +36,7 @@ struct RemoteImage<ErrorView: View, ImageView: View, LoadingView: View>: View {
         }
     }
     
-    init(url: URL, @ViewBuilder errorView: @escaping (Error) -> ErrorView, image: @escaping (Image) -> ImageView, @ViewBuilder loadingView: @escaping () -> LoadingView) {
+    init(url: URL, @ViewBuilder errorView: @escaping (Error) -> ErrorView, @ViewBuilder image: @escaping (Image) -> ImageView, @ViewBuilder loadingView: @escaping () -> LoadingView) {
         self.url = url
         self.errorView = errorView
         self.image = image

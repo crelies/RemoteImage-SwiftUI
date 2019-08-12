@@ -14,7 +14,7 @@ struct ContentView: View {
     var body: some View {
         RemoteImage(url: url, errorView: { error in
             Text(error.localizedDescription)
-        }, image: { image in
+        }, imageView: { image in
             image
             .resizable()
             .aspectRatio(contentMode: .fit)

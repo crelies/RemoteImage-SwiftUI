@@ -23,6 +23,8 @@ final class RemoteImageService: ObservableObject {
     let objectWillChange = PassthroughSubject<Void, Never>()
     
     func fetchImage(atURL url: URL) {
+        cancellable?.cancel()
+        
         if let image = RemoteImageService.cache.object(forKey: url as NSURL) {
             state = .image(image)
             return

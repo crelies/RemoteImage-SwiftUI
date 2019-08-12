@@ -12,15 +12,22 @@ import UIKit
 final class RemoteImageService: ObservableObject {
     private var cancellable: AnyCancellable?
     
+    static let cache = NSCache<NSURL, UIImage>()
+    
     var state: RemoteImageState = .loading {
         didSet {
             objectWillChange.send()
         }
     }
     
-    var objectWillChange = PassthroughSubject<Void, Never>()
+    let objectWillChange = PassthroughSubject<Void, Never>()
     
     func fetchImage(atURL url: URL) {
+        if let image = RemoteImageService.cache.object(forKey: url as NSURL) {
+            state = .image(image)
+            return
+        }
+        
         let urlSession = URLSession.shared
         let urlRequest = URLRequest(url: url)
         
@@ -35,6 +42,7 @@ final class RemoteImageService: ObservableObject {
                 }
             }) { image in
                 if let image = image {
+                    RemoteImageService.cache.setObject(image, forKey: url as NSURL)
                     self.state = .image(image)
                 } else {
                     self.state = .error(RemoteImageServiceError.couldNotCreateImage)

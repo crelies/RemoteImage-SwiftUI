@@ -16,7 +16,7 @@ struct RemoteImage<ErrorView: View, ImageView: View, LoadingView: View>: View {
     private let loadingView: () -> LoadingView
     @ObservedObject private var service: RemoteImageService = RemoteImageService()
     
-    var body: some View {
+    var body: AnyView {
         switch service.state {
             case .error(let error):
                 return AnyView(

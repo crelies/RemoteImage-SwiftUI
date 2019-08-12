@@ -32,6 +32,8 @@
 		B96695932300A0A600D249D3 /* RemoteImageState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RemoteImageState.swift; sourceTree = "<group>"; };
 		B96695962300A0AC00D249D3 /* RemoteImageService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RemoteImageService.swift; sourceTree = "<group>"; };
 		B96695982300A0B400D249D3 /* RemoteImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RemoteImage.swift; sourceTree = "<group>"; };
+		B966959A2301505B00D249D3 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		B966959B2301516200D249D3 /* RemoteImage.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = RemoteImage.gif; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,6 +50,8 @@
 		B966956F2300A03C00D249D3 = {
 			isa = PBXGroup;
 			children = (
+				B966959A2301505B00D249D3 /* README.md */,
+				B966959B2301516200D249D3 /* RemoteImage.gif */,
 				B966957A2300A03C00D249D3 /* RemoteImage */,
 				B96695792300A03C00D249D3 /* Products */,
 			);

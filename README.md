@@ -9,4 +9,20 @@ I wanted to have a simple and extendable remote image view in **SwiftUI** which 
 
 ## Preview
 
-Coming soon ...
+![Animated preview image](https://github.com/crelies/RemoteImage-SwiftUI/blob/master/RemoteImage.gif)
+
+Code:
+
+```swift
+let url = URL(string: "https://images.unsplash.com/photo-1524419986249-348e8fa6ad4a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80")!
+
+RemoteImage(url: url, errorView: { error in
+    Text(error.localizedDescription)
+}, image: { image in
+    image
+    .resizable()
+    .aspectRatio(contentMode: .fit)
+}, loadingView: {
+    Text("Loading ...")
+})
+```

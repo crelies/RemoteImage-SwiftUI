@@ -28,7 +28,8 @@ struct RemoteImage<ErrorView: View, ImageView: View, LoadingView: View>: View {
                 )
             case .loading:
                 return AnyView(
-                    loadingView().onAppear {
+                    loadingView()
+                    .onAppear {
                         self.service.fetchImage(atURL: self.url)
                     }
                 )

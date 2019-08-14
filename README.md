@@ -1,6 +1,9 @@
 # RemoteImage-SwiftUI
 
-Remote Image view with error and loading state for SwiftUI
+Remote Image view with error and loading state for **SwiftUI**
+
+This repository contains a usage example of my Swift package for a remote **SwiftUI** `Image view` to show remote images.
+You can find the Swift package [here](https://github.com/crelies/RemoteImage).
 
 ## Motivation
 

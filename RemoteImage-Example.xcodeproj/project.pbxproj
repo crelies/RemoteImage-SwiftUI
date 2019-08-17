@@ -17,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B91CAD872307F62400EB67B1 /* RemoteImageExample.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = RemoteImageExample.entitlements; sourceTree = "<group>"; };
 		B96695782300A03C00D249D3 /* RemoteImageExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RemoteImageExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B966957B2300A03C00D249D3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B966957D2300A03C00D249D3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -62,6 +63,7 @@
 		B966957A2300A03C00D249D3 /* RemoteImageExample */ = {
 			isa = PBXGroup;
 			children = (
+				B91CAD872307F62400EB67B1 /* RemoteImageExample.entitlements */,
 				B966957B2300A03C00D249D3 /* AppDelegate.swift */,
 				B966957D2300A03C00D249D3 /* SceneDelegate.swift */,
 				B966957F2300A03C00D249D3 /* ContentView.swift */,
@@ -296,8 +298,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_ENTITLEMENTS = RemoteImageExample/RemoteImageExample.entitlements;
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "-";
+				CODE_SIGN_STYLE = Manual;
+				DERIVE_MACCATALYST_PRODUCT_BUNDLE_IDENTIFIER = YES;
 				DEVELOPMENT_ASSET_PATHS = "RemoteImageExample/Preview\\ Content";
+				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = RemoteImageExample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -306,6 +312,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = de.crelies.RemoteImageExample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SUPPORTS_MACCATALYST = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -315,8 +323,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_ENTITLEMENTS = RemoteImageExample/RemoteImageExample.entitlements;
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "-";
+				CODE_SIGN_STYLE = Manual;
+				DERIVE_MACCATALYST_PRODUCT_BUNDLE_IDENTIFIER = YES;
 				DEVELOPMENT_ASSET_PATHS = "RemoteImageExample/Preview\\ Content";
+				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = RemoteImageExample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -325,6 +337,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = de.crelies.RemoteImageExample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SUPPORTS_MACCATALYST = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

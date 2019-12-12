@@ -373,7 +373,7 @@
 			repositoryURL = "https://github.com/crelies/RemoteImage";
 			requirement = {
 				kind = upToNextMajorVersion;
-				minimumVersion = 0.1.0;
+				minimumVersion = 1.0.0;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */

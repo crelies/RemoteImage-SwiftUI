@@ -20,7 +20,7 @@ struct ContentView: View {
             .resizable()
             .aspectRatio(contentMode: .fit)
         }, loadingView: {
-            Text("Loading ...")
+            ProgressView()
         })
     }
 }
